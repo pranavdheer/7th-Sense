@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login  Sign Up Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="shortcut icon" href="/images/my_logo.png" type="image/x-icon">
+  <link rel="icon" href="/images/my_logo.png" type="image/x-icon">
+  
+</head>
+
+<body>
+  
+  <div style="display:none;" id="hint">
+    <%if (hint!=undefined){%>
+      <%=hint%>
+    <%}%>
+  </div>
+  
+  <div class="cotn_principal">
+<div class="cont_centrar">
+<center>
+  <div class="oracle"></div>
+  <div class="error"><%- messages()%></div>
+</center>
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        <h2>LOGIN</h2>  
+  <p>Please login using your username and password</p> 
+  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>SIGN UP</h2>
+
+  
+  <p>Please enter following details to sign up</p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="/images/login_bg.jpg" alt="" />
+       </div>
+       
+    </div>
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="/images/login_bg.jpg" alt="" />
+       </div>
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Username" id = "loginUserName" />
+<input type="password" placeholder="Password" id = "loginPassword" />
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>SIGN UP</h2>
+<input type="text" placeholder="Name" id="signupName"/>
+<input type="text" placeholder="Username" id="signupUsername"/>
+<input type="password" placeholder="Password" id="signupPassword"/>
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+  
+
+    <script  src="/javascripts/index.js"></script>
+
+
+
+
+</body>
+
+</html>
